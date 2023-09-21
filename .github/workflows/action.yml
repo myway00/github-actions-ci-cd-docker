@@ -20,7 +20,7 @@ on:
       - master
 
 env:
-  PROJECT_ID: ${{ secrets.GCE_PROJECT }}
+  PROJECT_ID: ${{ secrets.GCP_PROJECT }}
   GCE_INSTANCE: cloud # TODO: update to instance name
   GCE_INSTANCE_ZONE: asia-northeast3 # TODO: update to instance zone
 
@@ -42,8 +42,8 @@ jobs:
       - uses: google-github-actions/setup-gcloud@v0
         with:
           version: '318.0.0'
-          service_account_key: ${{ secrets.GCE_SA_KEY }}
-          project_id: ${{ secrets.GCE_PROJECT }}
+          service_account_key: ${{ secrets.GCP_SA_KEY }}
+          project_id: ${{ secrets.GCP_PROJECT }}
 
       # Configure Docker to use the gcloud command-line tool as a credential
       # helper for authentication
