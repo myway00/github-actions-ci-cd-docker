@@ -33,8 +33,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      # Setup gcloud CLI 
-      - uses: google-github-actions/setup-gcloud@v0
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      # Setup gcloud CLI
+      - uses: google-github-actions/setup-gcloud@v1
         with:
           version: '318.0.0'
           service_account_key: ${{ secrets.GCE_SA_KEY }}
