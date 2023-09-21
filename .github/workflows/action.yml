@@ -21,7 +21,7 @@ on:
 
 env:
   PROJECT_ID: ${{ secrets.GCP_PROJECT }}
-  GCE_INSTANCE: cloud # TODO: update to instance name
+  GCE_INSTANCE: gcp-project # TODO: update to instance name
   GCE_INSTANCE_ZONE: asia-northeast3-a # TODO: update to instance zone
 
 jobs:
