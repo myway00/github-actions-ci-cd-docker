@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class CloudController {
     @GetMapping("/")
     public String welcome() {
-        return "welcome";
+        return "contents changed ! ";
     }
 }
