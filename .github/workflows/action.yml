@@ -21,7 +21,7 @@ on:
 
 env:
   PROJECT_ID: ${{ secrets.GCE_PROJECT }}
-  GCE_INSTANCE: test # TODO: update to instance name
+  GCE_INSTANCE: cloud # TODO: update to instance name
   GCE_INSTANCE_ZONE: asia-northeast3 # TODO: update to instance zone
 
 jobs:
